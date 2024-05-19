@@ -20,3 +20,9 @@ JavaCoin is a simple wallet management system that allows users to deposit, with
 ### Clone the Repository
 
 ```sh
+git clone https://github.com/yourusername/JavaCoin.git
+cd JavaCoin
+
+javac -d bin -sourcepath src src/GUI.java
+
+java -cp bin GUI
