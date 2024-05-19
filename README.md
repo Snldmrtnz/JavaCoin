@@ -17,10 +17,7 @@ JavaCoin is a comprehensive wallet management system that enables users to depos
 - Java Development Kit (JDK) 8 or higher
 - An IDE like IntelliJ IDEA, Eclipse, or NetBeans (optional, but recommended for easier development and execution)
 
-## Getting Started
+## How to Use
 
-### Clone the Repository
-
-First, clone the repository to your local machine:
-
+Here's a step-by-step guide on how to run the code:
 
