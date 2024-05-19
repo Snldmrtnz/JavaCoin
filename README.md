@@ -2,23 +2,6 @@
 
 JavaCoin is a comprehensive wallet management system that enables users to deposit, withdraw, transfer funds, and manage multiple wallets through an intuitive GUI built using Swing.
 
-## Table of Contents
-
-- [Features](#features)
-- [Requirements](#requirements)
-- [Getting Started](#getting-started)
-  - [Clone the Repository](#clone-the-repository)
-  - [Compile the Code](#compile-the-code)
-  - [Run the Application](#run-the-application)
-  - [Using an IDE](#using-an-ide)
-- [Usage](#usage)
-  - [Interface Overview](#interface-overview)
-  - [Wallet Navigation](#wallet-navigation)
-  - [Error Handling](#error-handling)
-- [Presentation Steps](#presentation-steps)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Features
 
 - **Add/Remove Wallets:** Easily create new wallets or remove existing ones.
@@ -38,7 +21,4 @@ JavaCoin is a comprehensive wallet management system that enables users to depos
 
 First, clone the repository to your local machine:
 
-```sh
-git clone https://github.com/yourusername/JavaCoin.git
-cd JavaCoin
 
