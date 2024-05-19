@@ -1,3 +1,5 @@
+![🖥️JavaCoin🪙 (1)](https://github.com/Snldmrtnz/JavaCoin/assets/118676134/eef15249-7be0-432c-a9b7-70c16247213e)
+
 # JavaCoin Wallet Manager
 
 JavaCoin is a comprehensive wallet management system that enables users to deposit, withdraw, transfer funds, and manage multiple wallets through an intuitive GUI built using Swing.
