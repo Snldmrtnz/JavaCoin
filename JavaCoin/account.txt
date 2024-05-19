@@ -1,0 +1,6 @@
+Account Number: 123456
+Wallets:
+- ID: 7d7729, Balance: 1000.0
+- ID: 7d71d5, Balance: 200.0
+- ID: d11d51, Balance: 0.0
+- ID: 7d5229, Balance: 200.0
