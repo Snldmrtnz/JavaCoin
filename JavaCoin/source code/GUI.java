@@ -241,10 +241,15 @@ public class GUI extends JFrame{
                 try {
                     amountDeposited = Double.parseDouble(amountField.getText().replace("$", ""));
                     if (amountDeposited <= 0) {
-                        JOptionPane.showMessageDialog(null, "Amount must be positive or zero.", "Error", JOptionPane.ERROR_MESSAGE);
+                        JOptionPane.showMessageDialog(null, "Amount must be positive.", "Error", JOptionPane.ERROR_MESSAGE);
                         return;
                     }
-                    
+                   
+                    curr.getWallets().get(currentWalletIndex).deposit(amountDeposited);
+                    double balance = curr.getWallets().get(currentWalletIndex).getBalance();
+                    balanceLabel.setText("$" + Double.toString(balance));
+        
+                    JOptionPane.showMessageDialog(null, "Deposited " + amountDeposited + ".", "Message", JOptionPane.INFORMATION_MESSAGE);
                 } catch (NumberFormatException ex) {
                     JOptionPane.showMessageDialog(null, "Invalid amount.", "Error", JOptionPane.ERROR_MESSAGE);
                 }
@@ -259,7 +264,7 @@ public class GUI extends JFrame{
         withdrawButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 try {
-                    amountWithdrawn = Double.parseDouble(amountField.getText() );
+                    amountWithdrawn = Double.parseDouble(amountField.getText());
                     if (amountWithdrawn < 0) {
                         JOptionPane.showMessageDialog(null, "Amount must be positive.", "Error", JOptionPane.ERROR_MESSAGE);
                         return;
@@ -268,15 +273,16 @@ public class GUI extends JFrame{
                         JOptionPane.showMessageDialog(null, "Insufficient funds.", "Error", JOptionPane.ERROR_MESSAGE);
                         return;
                     }
-                    curr.getWallets().get(0).withdraw(amountWithdrawn);
+                    curr.getWallets().get(currentWalletIndex).withdraw(amountWithdrawn);
                     double balance = curr.getWallets().get(currentWalletIndex).getBalance();
-                    balanceLabel.setText(Double.toString(balance));
+                    balanceLabel.setText("$" + Double.toString(balance));
                     JOptionPane.showMessageDialog(null, "Withdrawn " + amountWithdrawn + ".", "Message", JOptionPane.INFORMATION_MESSAGE);
                 } catch (NumberFormatException ex) {
                     JOptionPane.showMessageDialog(null, "Invalid amount.", "Error", JOptionPane.ERROR_MESSAGE);
                 }
             }
         });
+        
 
 
         transferButton = new GJButton("Transfer",null,Color.WHITE,buttonFont, "Transfer your funds here", 300, 100);
